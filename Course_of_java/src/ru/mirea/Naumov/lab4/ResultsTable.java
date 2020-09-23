@@ -21,20 +21,8 @@ public class ResultsTable extends JFrame {
         super("Таблица результатов");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(400, 400);
-        setLayout(new GridLayout(3, 2));
+        setLayout(null);
         setVisible(true);
-
-        for(int i = 0; i < pnl.length; ++i) {
-            pnl[i] = new JPanel();
-            pnl[i].setLayout(new BorderLayout());
-            add(pnl[i]);
-
-
-            int r = (int) (Math.random() * 255);
-            int g = (int) (Math.random() * 255);
-            int b = (int) (Math.random() * 255);
-            //pnl[i].setBackground(new Color(r, g, b));
-        }
 
         pnl[2].add(jbtnMilan, BorderLayout.NORTH);
         pnl[2].add(jbtnMadrid, BorderLayout.SOUTH);
