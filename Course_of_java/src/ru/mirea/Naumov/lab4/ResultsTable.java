@@ -5,6 +5,11 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class ResultsTable extends JFrame {
+    JMenuBar menuBar = new JMenuBar();
+    JMenu menu = new JMenu("Program");
+    JMenuItem menuItemRestart = new JMenuItem("Restart");
+    JMenuItem menuItemExit = new JMenuItem("Exit");
+
     JButton jbtnMilan= new JButton("AC Milan");
     JButton jbtnMadrid = new JButton("Real Madrid");
     JButton jbtnEndGame = new JButton("End the game");
@@ -12,10 +17,10 @@ public class ResultsTable extends JFrame {
     JLabel jlblLastScorer = new JLabel("Last Scorer: N/A");
     Label lblwinner = new Label("Winner: N/A");
 
-    JPanel[] pnl = new JPanel[6];
-
     int milanScore = 0;
     int madridScore = 0;
+
+    JPanel[] pnl = new JPanel[40];
 
     public ResultsTable(){
         super("Таблица результатов");
@@ -23,19 +28,31 @@ public class ResultsTable extends JFrame {
         setSize(400, 400);
         setLayout(null);
         setVisible(true);
+        setJMenuBar(menuBar);
 
-        pnl[2].add(jbtnMilan, BorderLayout.NORTH);
-        pnl[2].add(jbtnMadrid, BorderLayout.SOUTH);
-        pnl[3].add(jlblResult, BorderLayout.NORTH);
-        pnl[3].add(jlblLastScorer, BorderLayout.CENTER);
-        pnl[3].add(lblwinner, BorderLayout.SOUTH);
+        menuBar.add(menu);
+        menu.add(menuItemRestart);
+        menu.add(menuItemExit);
 
+        jbtnMilan.setBounds(25, 100, 150, 25);
+        jbtnEndGame.setBounds(25, 150, 150, 25);
+        jbtnMadrid.setBounds(25, 200, 150, 25);
+        jlblResult.setBounds(230, 100, 150, 25);
+        jlblLastScorer.setBounds(230, 150, 150, 25);
+        lblwinner.setBounds(230, 200, 150, 25);
+
+        add(jbtnMilan);
+        add(jbtnMadrid);
+        add(jlblResult);
+        add(jlblLastScorer);
+        add(lblwinner);
+        add(jbtnEndGame);
 
         jbtnMilan.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 milanScore++;
-                jlblResult.setText("Result: "+milanScore+"X"+madridScore);
+                jlblResult.setText("Result: "+milanScore+" X "+madridScore);
                 jlblLastScorer.setText("Last Scorer: AC Milan");
             }
         });
@@ -43,7 +60,7 @@ public class ResultsTable extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 madridScore++;
-                jlblResult.setText("Result: "+milanScore+"X"+madridScore);
+                jlblResult.setText("Result: "+milanScore+" X "+madridScore);
                 jlblLastScorer.setText("Last Scorer: RealMadrid");
             }
         });
@@ -53,6 +70,22 @@ public class ResultsTable extends JFrame {
                 if (milanScore > madridScore) lblwinner.setText("Winner: AC Milan");
                 else if (milanScore < madridScore) lblwinner.setText("Winner: Real Madrid");
                 else lblwinner.setText("Winner: DRAW");
+            }
+        });
+        menuItemRestart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                milanScore = 0;
+                madridScore = 0;
+                jlblResult.setText("Result: 0 X 0");
+                jlblLastScorer.setText("Last Scorer: N/A");
+                lblwinner.setText("Winner: N/A");
+            }
+        });
+        menuItemExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
             }
         });
     }
