@@ -9,6 +9,7 @@ public class Example4 extends JFrame{
 
     public Example4(){
         setTitle("Пример с сетками"); // or use super("Пример с сетками");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(3, 4));
         for(int i = 0; i < pnl.length; ++i){
             int r = (int) (Math.random() * 255);

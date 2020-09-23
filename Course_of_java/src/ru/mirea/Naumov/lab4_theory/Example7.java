@@ -24,10 +24,7 @@ public class Example7 extends JFrame {
 
     public Example7(){
         super("Проверка работоспособности меню");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 400);
-        setLayout(new BorderLayout());
-        setVisible(true);
+
 
         add(lbl, BorderLayout.SOUTH);
         addMouseListener(new MouseListener() {
