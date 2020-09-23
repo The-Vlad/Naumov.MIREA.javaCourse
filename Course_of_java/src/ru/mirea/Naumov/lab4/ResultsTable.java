@@ -20,8 +20,6 @@ public class ResultsTable extends JFrame {
     int milanScore = 0;
     int madridScore = 0;
 
-    JPanel[] pnl = new JPanel[40];
-
     public ResultsTable(){
         super("Таблица результатов");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
