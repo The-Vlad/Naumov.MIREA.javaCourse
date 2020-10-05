@@ -12,7 +12,7 @@ public class SortingStudentsByGPA{
         }
 
         quickSort(0, arraySize - 1);
-        System.out.println("########## Elements are sorted by Quick-Sort!");
+        System.out.println("########## Elements are sorted by Quick Sort Algorithm!");
 
         for (int i = 0; i < arraySize; ++i) System.out.println(i+") Student's  score: "+StudentsArray[i].score);
 

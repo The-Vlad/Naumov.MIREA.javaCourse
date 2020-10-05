@@ -12,7 +12,7 @@ public class TestStudent {
         }
 
         sortByInserts();
-        System.out.println("########## Elements are sorted by inserts!");
+        System.out.println("########## Elements are sorted by Algorithm with Inserts!");
 
         for (int i = 0; i < arraySize; ++i) System.out.println(i+") Student's "+IDNumbers[i].toString());
     }
@@ -45,10 +45,13 @@ public class TestStudent {
     }
 
     public static void main(String[] str){
-        System.out.println("\nУпражнение 1");
+        System.out.println("\nУпражнение 1 (Sorting by Algorithm with inserts):");
         new TestStudent();
 
-        System.out.println("\n\nУпражнение 2");
+        System.out.println("\n\nУпражнение 2 (Sorting by Quick Sort Algorithm)");
         new SortingStudentsByGPA();
+
+        System.out.println("\n\nУпражнение 3 (Sorting by Merge Sort Algorithm");
+        new SortingStudentsByMerge();
     }
 }
