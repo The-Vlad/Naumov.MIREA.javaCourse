@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,22 +28,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.TestStudent">
+  <component name="RunManager" selected="Application.Tester">
     <configuration name="Example4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.mirea.Naumov.lab4_theory.Example4" />
-      <module name="Naumov.MIREA.javaCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.mirea.Naumov.lab4_theory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.mirea.Naumov.lab4_theory.Example6" />
       <module name="Naumov.MIREA.javaCourse" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +81,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.Naumov.lab11.task3.Tester" />
+      <module name="Naumov.MIREA.javaCourse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.Naumov.lab11.task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestStudent" />
+        <item itemvalue="Application.Tester" />
         <item itemvalue="Application.ResultsTable" />
+        <item itemvalue="Application.TestStudent" />
         <item itemvalue="Application.Example4" />
         <item itemvalue="Application.Example7" />
-        <item itemvalue="Application.Example6" />
       </list>
     </recent_temporary>
   </component>
@@ -131,22 +132,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.-1.right/0.0.1536.824@0.0.1536.824" timestamp="1601884304415" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1601886703114">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1606549306362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601886703114" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1601886703114">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606549306362" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1606549306362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601886703114" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1601886703114">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606549306362" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1606549306362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601886703114" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1601886703114">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606549306362" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1606549306362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601886703114" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606549306362" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601884295646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -167,10 +168,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1600856043562" />
-    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600856593021">
+    <state x="209" y="33" key="new project wizard" timestamp="1606459558013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600856593021" />
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606459558013" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1606547106246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606547106246" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606548046990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606548046990" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
